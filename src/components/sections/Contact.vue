@@ -16,7 +16,7 @@
         ><a href="mailto:LAZYWINKPHOTO@GMAIL.COM">LAZYWINKPHOTO@GMAIL.COM</a
         ><br />
         GAJOWA 34, PAWILON I PIĘTRO, BYDGOSZCZ<br />
-          <iframe
+          <!-- <iframe
           rel="preconnect"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d598.5395885360219!2d18.040943285393354!3d53.125302890038185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47031338fb705731%3A0x55843b9682a45edb!2sLazy%20Wink%20Paulina%20Kuligowska!5e0!3m2!1sen!2spl!4v1610712360753!5m2!1sen!2spl"
             width="600"
@@ -26,7 +26,7 @@
             allowfullscreen=""
             aria-hidden="false"
             tabindex="0"
-          ></iframe>
+          ></iframe> -->
       </address>
       </div>
     </div>
