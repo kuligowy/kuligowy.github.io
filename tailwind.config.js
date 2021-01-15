@@ -2,6 +2,9 @@ module.exports = {
   purge: {
     content: ['./src/**/*.html', './src/**/*.vue', './src/**/*.jsx', './src/**/*.hbs']
   },
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
   theme: {
     extend: {
       colors: {

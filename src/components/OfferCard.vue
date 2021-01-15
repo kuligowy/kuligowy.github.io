@@ -5,7 +5,6 @@
       <div
         class="h-full border-2 border-gray-200 rounded-lg overflow-hidden relative hover:bg-shark-50 hover:bg-opacity-60">
         <div class="p-6 text-site-10">
-          <font-awesome :icon="['fas', 'heart']" size="3x" />
           <h1
             class="title-font text-2xl font-medium text-gray-900 mb-3"
             :class="{ 'mb-2': !record.excerpt }">

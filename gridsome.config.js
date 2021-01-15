@@ -1,3 +1,6 @@
+// const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
+//   .BundleAnalyzerPlugin
+
 var embedConfig = {
   enabledProviders: ['Youtube', 'Vimeo', 'Gist', 'Codepen', 'JSFiddle', 'Giphy'],
   Youtube: {
@@ -184,7 +187,10 @@ module.exports = {
     }
   },
   chainWebpack: config => {
-    config.resolve.alias.set('@customPageImage', '@/../content/pages'),
-    config.resolve.alias.set('@portfolioImages', '@/../content/portfolio')
+    config.resolve.alias.set('@customPageImage', '@/../content/pages');
+    config.resolve.alias.set('@portfolioImages', '@/../content/portfolio');
+    // config
+    //   .plugin('BundleAnalyzerPlugin')
+    //   .use(BundleAnalyzerPlugin, [{ analyzerMode: 'static' }])
   }
 }
