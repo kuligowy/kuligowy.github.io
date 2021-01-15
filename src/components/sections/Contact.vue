@@ -1,41 +1,64 @@
 <template>
-  <section class="container mx-auto bg-white">
-<div class="mt-10 sm:mt-0">
-  <div class="md:grid grid-cols-1 md:grid-cols-2 md:gap-6">
-    <div class="md:col-span-1">
-      <div class="px-4 sm:px-0">
-        <address class="bg-red">
-        <p>
-          SKONTAKTUJ SIĘ ZE MNĄ! By się ze mną skontaktować wypełnij formularz
-          kontaktowy lub zadzwoń. Jeśli nie odbiorę, to z pewnością pochłonęła
-          mnie fotografia. Bądź cierpliwy, na pewno oddzwonię!
-        </p>
-        <span>icon</span>PAULINA KULIGOWSKA<br />
-        <span>icon</span> +48 799 859 509<br />
-        <span>icon</span
-        ><a href="mailto:LAZYWINKPHOTO@GMAIL.COM">LAZYWINKPHOTO@GMAIL.COM</a
-        ><br />
-        GAJOWA 34, PAWILON I PIĘTRO, BYDGOSZCZ<br />
-          <!-- <iframe
-          rel="preconnect"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d598.5395885360219!2d18.040943285393354!3d53.125302890038185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47031338fb705731%3A0x55843b9682a45edb!2sLazy%20Wink%20Paulina%20Kuligowska!5e0!3m2!1sen!2spl!4v1610712360753!5m2!1sen!2spl"
-            width="600"
-            height="450"
-            frameborder="0"
-            style="border: 0"
-            allowfullscreen=""
-            aria-hidden="false"
-            tabindex="0"
-          ></iframe> -->
-      </address>
-      </div>
-    </div>
-    <div> contact form </div>
+  <div class="container px-5 mx-auto pb-4">
+    <section>
+      <div class="flex flex-wrap ">
+        <div class="w-full text-center pb-6">
+          <h2 class="text-4xl">
+Kontakt        
+</h2>
+        </div>
+        <div class="w-full md:w-1/2 p-4">
+         <div class="w-full p-4 leading-loose" >
+            <p>
+              By się ze mną skontaktować wypełnij formularz kontaktowy lub
+              zadzwoń.
+              </p><br />
+              <p>Jeśli nie odbiorę, to z pewnością pochłonęła mnie
+              fotografia.
+            </p>
+            <br />
+            <p>Bądź cierpliwy, na pewno oddzwonię!</p>
+            </div>
+            <div class="w-full p-4">
+            <p>GAJOWA 34, PAWILON I PIĘTRO, BYDGOSZCZ</p>
+            </div>
+            <div class="w-full p-4">
+            <p>PAULINA KULIGOWSKA</p>
+            <p>+48 799 859 509</p>
+            <p>Lazywinkphoto@gmail.com</p>
+            </div>
+            </div>
+        <form class="w-full md:w-1/2 text-white bg-black" action="https://formspree.io/f/xwkwadgk" method="POST">
+ 
+        <!-- Input container -->
+        <div class="w-full p-4">
+            <div class=" p-4">
+                <label for="name">TWOJE DANE</label>
+                <input type="text" name="name" class="w-full p-2" placeholder="wpisz swoje dane">
+            </div>
+        </div>
+        
+        <div class="w-full p-4">
+            <div class="p-4">
+                <label for="_replyto">EMAIL</label>
+                <input type="text" name="_replyto" class="w-full p-2" placeholder="twoj adres email">
+            </div>
+        </div>
+        <!-- Input container -->
+        <div class="w-full p-4">
+            <div class="p-4">
+                <label for="message">WIADOMOŚĆ</label>
+                <textarea name="message" class="w-full p-2" placeholder="twoja wiadomosc"></textarea>
+            </div>
+        </div>
+        <!-- Input container -->
+        <div class="w-full p-4">
+            <div class="border-2 border-white hover:bg-site-10 p-4">
+          <button type="submit" class=" w-full p-2">Send</button>
+            </div>
+        </div>
+    </form>
+        </div>
+    </section>
   </div>
-</div>
-
-
-
-       
-  </section>
 </template>
