@@ -118,24 +118,6 @@ module.exports = {
           }
         }
       }
-    },
-    {
-      use: 'gridsome-plugin-flexsearch',
-      options: {
-        searchFields: ['title', 'excerpt', 'content'],
-        collections: [
-          {
-            typeName: 'Article',
-            indexName: 'Article',
-            fields: ['title', 'content', 'path']
-          },
-          {
-            typeName: 'News',
-            indexName: 'News',
-            fields: ['title', 'content', 'path']
-          }
-        ]
-      }
     }
   ],
   templates: {
