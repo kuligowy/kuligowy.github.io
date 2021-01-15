@@ -19,7 +19,7 @@
             <slot name="link">
               <g-link
                 :to="record.path"
-                class="text-smalt-blue-500 hover:text-black inline-flex items-center">
+                class="text-black hover:text-site-10 inline-flex items-center">
                 Continue reading
                 <svg
                   class="w-4 h-4 ml-2"

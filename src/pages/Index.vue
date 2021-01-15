@@ -2,7 +2,7 @@
   <Layout>
     <PageHeader>
       <template v-slot:image>
-        <g-image src="~/assets/images/glowne2-scaled.webp" />
+        <g-image src="~/assets/images/glowne2-scaled.webp" alt="main background"/>
       </template>
       <template v-slot:content>
         <p class="text-4xl md:text-6xl">Lazy Wink</p>
