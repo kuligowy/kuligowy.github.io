@@ -36,6 +36,14 @@ module.exports = function (api) {
         ...options
       };
     }
+    
+    if (options.internal.typeName === 'Portfolio') {
+      options.recordType = options.internal.typeName;
+      options.images = (typeof options.images === 'string') ? options.images.split(',').map(string => string.trim()) : options.images;
+      return {
+        ...options
+      };
+    }
 
     if (options.internal.typeName === 'News') {
       options.recordType = options.internal.typeName;

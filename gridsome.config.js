@@ -1,3 +1,6 @@
+// const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
+//   .BundleAnalyzerPlugin
+
 var embedConfig = {
   enabledProviders: ['Youtube', 'Vimeo', 'Gist', 'Codepen', 'JSFiddle', 'Giphy'],
   Youtube: {
@@ -23,7 +26,8 @@ var embedConfig = {
 };
 
 module.exports = {
-  siteName: 'Gridsome',
+  siteName: 'LazyWink',
+  siteUrl: 'https://kuligowy.github.io',
   permalinks: {
     trailingSlash: false
   },
@@ -50,6 +54,14 @@ module.exports = {
       options: {
         typeName: 'CustomPage',
         baseDir: './content/pages',
+        path: '*.md'
+      }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'Portfolio',
+        baseDir: './content/portfolio',
         path: '*.md'
       }
     },
@@ -176,5 +188,9 @@ module.exports = {
   },
   chainWebpack: config => {
     config.resolve.alias.set('@customPageImage', '@/../content/pages');
+    config.resolve.alias.set('@portfolioImages', '@/../content/portfolio');
+    // config
+    //   .plugin('BundleAnalyzerPlugin')
+    //   .use(BundleAnalyzerPlugin, [{ analyzerMode: 'static' }])
   }
 }
