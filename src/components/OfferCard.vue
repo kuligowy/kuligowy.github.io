@@ -8,7 +8,6 @@
           <h1
             class="title-font text-2xl font-medium text-gray-900 mb-3"
             :class="{ 'mb-2': !record.excerpt }">
-            <g-image src="~/assets/images/heart.svg" width="50" height="50" />
             <span class="uppercase">{{ record.title }}</span>
           </h1>
           <div

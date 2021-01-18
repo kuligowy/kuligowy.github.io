@@ -26,7 +26,6 @@
           excerpt
           createdAt(format:"Do MMMM YYYY")
           timeToRead
-          icon
         }
       }
     }

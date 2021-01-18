@@ -33,11 +33,7 @@
 
 <script>
 import PageHeader from "~/components/PageHeader";
-import SectionLatestArticles from "~/components/sections/LatestArticles";
 import SectionLatestNews from "~/components/sections/LatestNews";
-import SectionContribute from "~/components/sections/Contribute";
-import SectionThinkDifferent from "~/components/sections/ThinkDifferent";
-import SectionOpenSource from "~/components/sections/OpenSource";
 import SectionOffer from "~/components/sections/Offer";
 import SectionPortfolio from "~/components/sections/Portfolio";
 import SectionInterested from "~/components/sections/Interested";
@@ -48,14 +44,9 @@ export default {
   },
   components: {
     PageHeader,
-    SectionLatestArticles,
     SectionLatestNews,
-    SectionContribute,
-    SectionThinkDifferent,
-    SectionOpenSource,
     SectionOffer,
     SectionPortfolio,
-    SectionContribute,
     SectionInterested,
     SectionContact,
   },
