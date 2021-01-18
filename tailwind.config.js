@@ -2,13 +2,11 @@ module.exports = {
   purge: {
     content: ['./src/**/*.html', './src/**/*.vue', './src/**/*.jsx', './src/**/*.hbs']
   },
-  plugins: [
-    require('@tailwindcss/forms'),
-  ],
   theme: {
+
     extend: {
       colors: {
-        site:{
+        site: {
           10: '#fec503',
           20: '#404248'
         },
@@ -49,9 +47,10 @@ module.exports = {
         90: '0.9'
       },
       fontFamily: {
+        'body': ['Baskervville'],
+        'display': ['Baskervville'],
         sans: [
-          'Libre Baskerville',
-          'Rubik',
+          'Baskervville',
           '"Source Sans Pro"',
           '"Segoe UI"',
           'Roboto',
@@ -64,8 +63,8 @@ module.exports = {
           '"Segoe UI Symbol"',
           '"Noto Color Emoji"'
         ],
-        serif: ['Libre Baskerville', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
-        mono: ['Menlo', 'Monaco', 'Consolas', '"Liberation Mono"', '"Courier New"', 'monospace']
+        // serif: ['Baskerville', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
+        // mono: ['Baskerville', 'Menlo', 'Monaco', 'Consolas', '"Liberation Mono"', '"Courier New"', 'monospace']
       },
       zIndex: {
         '-10': '-10',
@@ -111,7 +110,8 @@ module.exports = {
   },
   plugins: [
     require('tailwindcss-aspect-ratio'),
-    require('@tailwindcss/typography')
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/forms')
   ],
   future: {
     removeDeprecatedGapUtilities: true

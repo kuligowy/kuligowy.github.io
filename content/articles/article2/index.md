@@ -1,8 +1,8 @@
 ---
-title: Est earum quaerat molestias natus deleniti quos culpa eum
+title: Fotografia noworodkowa
 tags: ['tag3', 'tag4']
-excerpt: Dolore harum rem. Ut aut non accusamus. Autem corrupti ut laborum omnis. Ut necessitatibus iusto aliquam.
-createdAt: 2019-11-02 11:26:00
+excerpt: Dla noworodków do 14 doby życia.<br />Bez pośpiechu, trwająca do max 4h, w zależności od współpracy maluszka.
+createdAt: 2020-11-02 11:26:00
 ---
 
 ## Ipsum fugit ab dolor nesciunt magnam

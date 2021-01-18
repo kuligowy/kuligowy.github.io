@@ -1,7 +1,7 @@
 ---
-title: Iure exercitationem dolore ex
+title: Fotografia portretowa
 tags: tag1, tag2, tag3
-excerpt: Quaerat nihil unde doloribus neque at quia. Et dignissimos tempora nam. Quos velit non est ut quam.
+excerpt: Portrety w studio.<br />Sesje kobiece.<br />Portrety biznesowe.
 createdAt: 2019-11-06 11:26:00
 
 ---

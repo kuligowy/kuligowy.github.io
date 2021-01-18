@@ -870,6 +870,11 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@fontsource/baskervville@^4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/baskervville/-/baskervville-4.1.0.tgz#ba65baaa07d209cba3433378b8f3340eb1d7a520"
+  integrity sha512-w8tBDrGCHLBMJLOBXCg1L6lZ2LZ6I8cEsb1weEUhIBQLboSJAuLrfZ8R7uOCx44HU01PssXGk2pqxPultQohZQ==
+
 "@fullhuman/postcss-purgecss@^3.0.0":
   version "3.1.3"
   resolved "https://registry.yarnpkg.com/@fullhuman/postcss-purgecss/-/postcss-purgecss-3.1.3.tgz#47af7b87c9bfb3de4bc94a38f875b928fffdf339"

@@ -1,7 +1,7 @@
 ---
-title: Cum cupiditate tempore
+title: Sesje plenerowe
 tags: tag2, tag3
-excerpt: Sit ab aliquid in mollitia eveniet corporis ut. Id alias natus eaque voluptas voluptates. Maxime in similique architecto minima et odio nihil tempore beatae. Autem et iusto voluptas fugit nesciunt facilis debitis eius amet. Ipsam est enim dicta deserunt deserunt repellat qui. Dolor omnis sit soluta est doloribus beatae voluptatum nisi.
+excerpt: Narzeczeńskie.<br />Hobbystyczne.<br />Okazjonalne.
 createdAt: 2019-11-05 11:26:00
 ---
 

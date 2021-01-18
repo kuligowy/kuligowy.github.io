@@ -26,7 +26,7 @@ var embedConfig = {
 };
 
 module.exports = {
-  siteName: 'LazyWink',
+  siteName: 'Lazy Wink',
   siteUrl: 'https://kuligowy.github.io',
   permalinks: {
     trailingSlash: false

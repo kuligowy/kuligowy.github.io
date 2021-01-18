@@ -1,8 +1,8 @@
 ---
-title: Quo adipisci suscipit aut mollitia occaecati.
+title: Fotografia dziecięca.
 tags: ['tag3', 'tag4']
-excerpt: Quia aut eos in eligendi odio. Necessitatibus voluptatem autem quod. Ut est sint et quos nam aliquid repudiandae voluptas. Molestiae rerum culpa laudantium vitae maxime mollitia cum.
-createdAt: 2019-11-03 11:26:00
+excerpt: Niemowlaki i starszaki!<br />Sesje urodzinowe.<br /> Sesje cake smash!
+createdAt: 2020-11-03 11:26:00
 
 ---
 

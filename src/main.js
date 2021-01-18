@@ -17,6 +17,9 @@ import 'prismjs/plugins/line-numbers/prism-line-numbers.css'
 // config.autoAddCss = false;
 // library.add(faGithub, faTwitter, faHeart,faBaby, faChild,faHome, faGrinWink, faTree )
 
+import "@fontsource/baskervville" // Defaults to weight 400.
+
+
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout);
