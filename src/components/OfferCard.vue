@@ -8,6 +8,9 @@
           <h1
             class="title-font text-2xl font-medium text-gray-900 mb-3"
             :class="{ 'mb-2': !record.excerpt }">
+            <div class="text-site-10 pb-5" >
+              <app-icon :icon="record.icon" size="lg"></app-icon>
+            </div>
             <span class="uppercase">{{ record.title }}</span>
           </h1>
           <div

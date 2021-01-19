@@ -3,7 +3,8 @@ title: Fotografia portretowa
 tags: tag1, tag2, tag3
 excerpt: Portrety w studio.<br />Sesje kobiece.<br />Portrety biznesowe.
 createdAt: 2019-11-06 11:26:00
-
+icon: grin-wink
+position: 50
 ---
 
 ## Ipsum fugit ab dolor nesciunt magnam

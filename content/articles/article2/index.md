@@ -1,8 +1,10 @@
 ---
-title: Fotografia noworodkowa
-tags: ['tag3', 'tag4']
-excerpt: Dla noworodków do 14 doby życia.<br />Bez pośpiechu, trwająca do max 4h, w zależności od współpracy maluszka.
-createdAt: 2020-11-02 11:26:00
+title: Fotografia noworodkowa 
+tags: ['tag3', 'tag4'] 
+excerpt: Dla noworodków do 14 doby życia.<br />Bez pośpiechu, trwająca do max 4h, w zależności od współpracy maluszka. 
+createdAt: 2020-12-01 09:26:00
+icon: baby
+position: 20
 ---
 
 ## Ipsum fugit ab dolor nesciunt magnam

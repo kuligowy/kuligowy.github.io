@@ -34,23 +34,23 @@
           Oferta
         </g-link>
         <g-link
-          to="/#contact"
+          to="/contact-page"
           class="mr-5 hidden md:block"
           exact>
           Kontakt
         </g-link>
-        <g-link
+        <!-- <g-link
           to="/resources"
           class="mr-5 hidden md:block"
           exact>
           Resources
-        </g-link>
+        </g-link> -->
         
         <g-link
-          to="/pages/contribute"
+          to="/o-mnie"
           class="mr-5 hidden md:block"
           exact>
-          Contribute
+          O mnie
         </g-link>
 
         <a

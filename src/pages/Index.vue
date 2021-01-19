@@ -9,15 +9,15 @@
         <p class="text-lg md:text-2xl">CHWILE ULOTNE JAK MRUGNIĘCIE OKA</p>
       </template>
     </PageHeader>
-    <SectionContribute />
+    <SectionPortfolio />
     <div class="container text-center mx-auto">
       <SectionLatestNews />
     </div>
-    <SectionInterested />
     <div class="container text-center mx-auto">
       <!-- <SectionLatestArticles /> -->
       <SectionOffer />
     </div>
+    <SectionInterested />
     <SectionContact />
     <!-- <SectionContribute /> -->
 

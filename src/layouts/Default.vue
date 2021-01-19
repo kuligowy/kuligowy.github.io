@@ -2,7 +2,7 @@
   <div class="layout">
     <ResponsiveMenuPartial :show-responsive-menu="showResponsiveMenu" @closeResponsiveMenu="closeResponsiveMenu" />
     <HeaderPartial @openResponsiveMenu="openResponsiveMenu" />
-    <div class="min-h-screen">
+    <div class="min-h-screen" v-bind:class="backgroundColor">
       <slot />
     </div>
     <FooterPartial />
@@ -27,6 +27,12 @@ export default {
     HeaderPartial,
     FooterPartial,
     ResponsiveMenuPartial
+  },
+  props: {
+    backgroundColor:{
+      type: String,
+      default: 'bg-white'
+    }
   },
   data: function () {
     return {

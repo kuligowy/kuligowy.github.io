@@ -1,9 +1,10 @@
 ---
 title: Fotografia rodzinna
 tags: ['tag3', 'tag4']
-excerpt: Okazjonalna , jak i bez okazji.<br />Do albumu, na ścianę lub prezent.<Br />Utrwalenie miłości i bliskości.
+excerpt: Okazjonalna , jak i bez okazji.<br />Do albumu, na ścianę lub prezent.<Br />Utrwalenie miłości i bliskości. 
 createdAt: 2020-11-04 11:26:00
-
+icon: home
+position: 40
 ---
 
 ## Ipsum fugit ab dolor nesciunt magnam

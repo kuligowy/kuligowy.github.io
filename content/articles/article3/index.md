@@ -1,9 +1,10 @@
 ---
 title: Fotografia dziecięca.
 tags: ['tag3', 'tag4']
-excerpt: Niemowlaki i starszaki!<br />Sesje urodzinowe.<br /> Sesje cake smash!
-createdAt: 2020-11-03 11:26:00
-
+excerpt: Niemowlaki i starszaki!<br />Sesje urodzinowe.<br /> Sesje cake smash! 
+createdAt: 2020-12-01 10:26:00
+icon: child
+position: 30
 ---
 
 ## Ipsum fugit ab dolor nesciunt magnam

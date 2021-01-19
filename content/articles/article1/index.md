@@ -1,8 +1,10 @@
 ---
-title: Fotografia Ciążowa
-tags: tag1, tag2
-excerpt: Dla kobiet z wyraźnie zaokrąglonym brzuszkiem, zwyczajowo wykonywana pomiędzy 28 a 34 tc.
-createdAt: 2020-12-01 11:26:00
+title: Fotografia Ciążowa 
+tags: tag1, tag2 
+excerpt: Dla kobiet z wyraźnie zaokrąglonym brzuszkiem, zwyczajowo wykonywana pomiędzy 28 a 34 tc. 
+createdAt: 2020-12-01 08:26:00 
+icon: heart 
+position: 10 
 ---
 
 ## Ipsum fugit ab dolor nesciunt magnam

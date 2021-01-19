@@ -1,10 +1,11 @@
 <template>
   <section>
-    <div class="container py-4 mx-auto">
-      <div class="text-center ">
-        <h2 class="text-4xl">
-          Oferta
+    <div class="container px-5 py-12 mx-auto">
+      <div class="text-center pb-12 ">
+        <h2 class="text-4xl font-sans">
+         Oferta
         </h2>
+
       </div>
       <div class="grid grid-cols-1 md:grid-cols-3">
         <OfferCard
@@ -18,7 +19,7 @@
 
 <static-query>
   query {
-    records: allArticle(limit:6, sortBy:"createdAt") {
+    records: allArticle(limit:6, sortBy:"position", order:ASC) {
       edges {
         node {
           title
@@ -26,6 +27,7 @@
           excerpt
           createdAt(format:"Do MMMM YYYY")
           timeToRead
+          icon
         }
       }
     }

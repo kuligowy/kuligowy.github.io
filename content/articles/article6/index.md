@@ -3,6 +3,8 @@ title: Sesje plenerowe
 tags: tag2, tag3
 excerpt: Narzeczeńskie.<br />Hobbystyczne.<br />Okazjonalne.
 createdAt: 2019-11-05 11:26:00
+icon: tree
+position: 60
 ---
 
 ## Ipsum fugit ab dolor nesciunt magnam
