@@ -17,6 +17,7 @@
       <!-- <SectionLatestArticles /> -->
       <SectionOffer />
     </div>
+    <SectionPortfolioComponent />
     <SectionInterested />
     <SectionContact />
     <!-- <SectionContribute /> -->
@@ -36,6 +37,7 @@ import PageHeader from "~/components/PageHeader";
 import SectionLatestNews from "~/components/sections/LatestNews";
 import SectionOffer from "~/components/sections/Offer";
 import SectionPortfolio from "~/components/sections/Portfolio";
+import SectionPortfolioComponent from "~/components/sections/PortfolioComponent";
 import SectionInterested from "~/components/sections/Interested";
 import SectionContact from "~/components/sections/Contact";
 export default {
@@ -49,6 +51,7 @@ export default {
     SectionPortfolio,
     SectionInterested,
     SectionContact,
+    SectionPortfolioComponent
   },
 };
 </script>

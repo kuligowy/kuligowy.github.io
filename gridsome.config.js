@@ -43,90 +43,102 @@ module.exports = {
       precomposed: true
     }
   },
-  plugins: [{
-    use: 'gridsome-plugin-brotli',
-    options: {
-      extensions: ['css', 'html', 'js', 'svg', 'json']
-    }
-  },
-  {
-    use: 'gridsome-plugin-tailwindcss',
-    options: {
-      tailwindConfig: './tailwind.config.js'
-    }
-  },
-  {
-    use: '@gridsome/source-filesystem',
-    options: {
-      typeName: 'CustomPage',
-      baseDir: './content/pages',
-      path: '*.md'
-    }
-  },
-  {
-    use: '@gridsome/source-filesystem',
-    options: {
-      typeName: 'Portfolio',
-      baseDir: './content/portfolio',
-      path: '*.md'
-    }
-  },
-  {
-    use: '@gridsome/source-filesystem',
-    options: {
-      typeName: 'Article',
-      baseDir: './content/articles',
-      path: '**/*.md',
-      refs: {
-        tags: {
-          typeName: 'Tag',
-          create: true
+  plugins: [
+    {
+      use: '@gridsome/source-contentful',
+      options: {
+        space: process.env.CTF_SPACE_ID,
+        accessToken: process.env.CTF_ACCESS_TOKEN,
+        host: 'cdn.contentful.com',
+        environment: 'master',
+        typeName: 'Contentful'
+      }
+    },
+    // {
+    //   use: 'gridsome-plugin-brotli',
+    //   options: {
+    //     extensions: ['css',  'js', 'svg', 'json']
+    //   }
+    // },
+    {
+      use: 'gridsome-plugin-tailwindcss',
+      options: {
+        tailwindConfig: './tailwind.config.js'
+      }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'CustomPage',
+        baseDir: './content/pages',
+        path: '*.md'
+      }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'Portfolio',
+        baseDir: './content/portfolio',
+        path: '*.md'
+      }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'Article',
+        baseDir: './content/articles',
+        path: '**/*.md',
+        refs: {
+          tags: {
+            typeName: 'Tag',
+            create: true
+          }
+        }
+      }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'News',
+        baseDir: './content/news',
+        path: '*.md',
+        refs: {
+          tags: {
+            typeName: 'Tag',
+            create: true
+          }
+        }
+      }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'Credit',
+        baseDir: './content/credits',
+        path: '*.md'
+      }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'Resource',
+        baseDir: './content/resources',
+        path: '*.md',
+        refs: {
+          tags: {
+            typeName: 'ResourceTag',
+            create: true
+          },
+          type: {
+            typeName: 'ResourceType',
+            create: true
+          }
         }
       }
     }
-  },
-  {
-    use: '@gridsome/source-filesystem',
-    options: {
-      typeName: 'News',
-      baseDir: './content/news',
-      path: '*.md',
-      refs: {
-        tags: {
-          typeName: 'Tag',
-          create: true
-        }
-      }
-    }
-  },
-  {
-    use: '@gridsome/source-filesystem',
-    options: {
-      typeName: 'Credit',
-      baseDir: './content/credits',
-      path: '*.md'
-    }
-  },
-  {
-    use: '@gridsome/source-filesystem',
-    options: {
-      typeName: 'Resource',
-      baseDir: './content/resources',
-      path: '*.md',
-      refs: {
-        tags: {
-          typeName: 'ResourceTag',
-          create: true
-        },
-        type: {
-          typeName: 'ResourceType',
-          create: true
-        }
-      }
-    }
-  }
   ],
   templates: {
+    ContentfulGallery: "/gallery/:slug",
     Article: [{
       path: '/articles/:title'
     }],
