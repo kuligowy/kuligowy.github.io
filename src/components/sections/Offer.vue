@@ -7,7 +7,7 @@
         </h2>
 
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-3">
+      <div class="flex flex-wrap -m-4">
         <OfferCard
           v-for="edge in $static.records.edges"
           :key="edge.node.id"

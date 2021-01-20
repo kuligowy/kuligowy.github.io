@@ -28,6 +28,7 @@ var embedConfig = {
 module.exports = {
   siteName: 'Lazy Wink',
   siteUrl: 'https://kuligowy.github.io',
+  siteDescription: "Fotografia ciążowa, noworodkowa Bydgoszcz",
   permalinks: {
     trailingSlash: false
   },

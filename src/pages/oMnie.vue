@@ -59,7 +59,7 @@ import ContactForm from "~/components/sections/ContactForm";
 
 export default {
   metaInfo: {
-    title: "Kontakt",
+    title: "O mnie",
   },
   components: {
     PageHeader,
