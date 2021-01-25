@@ -3,7 +3,7 @@
     <div class="container px-5 py-12 mx-auto">
       <div class="text-center pb-12 ">
         <h2 class="text-4xl font-sans">
-         Oferta
+         Standardowa oferta
         </h2>
 
       </div>
@@ -19,14 +19,13 @@
 
 <static-query>
   query {
-    records: allArticle(limit:6, sortBy:"position", order:ASC) {
+    records: allContentfulOffer(limit:6, sortBy:"position", order:ASC) {
       edges {
         node {
           title
           path
           excerpt
           createdAt(format:"Do MMMM YYYY")
-          timeToRead
           icon
         }
       }

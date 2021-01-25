@@ -35,10 +35,10 @@
     </div>
   </Layout>
 </template>
-
+<!--
 <page-query>
-query ($id: ID!, $page:Int) {
-  records : tag(id: $id) {
+query Tags ($path: String!, $page:Int) {
+  records : contentfulTag(path: $path) {
     id
     title
     belongsTo(perPage: 9, page: $page) @paginate {
@@ -50,21 +50,19 @@ query ($id: ID!, $page:Int) {
       edges {
         node {
           __typename
-          ... on News {
+          ... on ContentfulNews {
             id
             title
             path
             excerpt
             createdAt(format:"Do MMMM YYYY")
-            timeToRead
           }
-          ... on Article {
+          ... on ContentfulOffer {
             id
             title
             path
             excerpt
             createdAt(format:"Do MMMM YYYY")
-            timeToRead
           }
         }
       }
@@ -72,7 +70,7 @@ query ($id: ID!, $page:Int) {
   }
 }
 </page-query>
-
+-->
 <script>
 import PageHeader from '~/components/PageHeader'
 import RecordCard from '~/components/RecordCard'

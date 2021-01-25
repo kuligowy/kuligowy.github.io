@@ -9,26 +9,16 @@
         <p class="text-lg md:text-2xl">CHWILE ULOTNE JAK MRUGNIĘCIE OKA</p>
       </template>
     </PageHeader>
+
     <SectionPortfolio />
-    <div class="container text-center mx-auto">
+    <div class="container mx-auto">
       <SectionLatestNews />
-    </div>
-    <div class="container text-center mx-auto">
-      <!-- <SectionLatestArticles /> -->
       <SectionOffer />
     </div>
-    <SectionPortfolioComponent />
     <SectionInterested />
-    <SectionContact />
-    <!-- <SectionContribute /> -->
-
-    <!-- <SectionThinkDifferent /> -->
-
-    <!-- <div class="container text-center mx-auto"> -->
-    <!-- <SectionLatestNews /> -->
-    <!-- </div> -->
-
-    <!-- <SectionOpenSource /> -->
+    <div class="container mx-auto">
+      <SectionContact />
+    </div>
   </Layout>
 </template>
 

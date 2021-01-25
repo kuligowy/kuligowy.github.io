@@ -38,7 +38,7 @@
 
 <page-query>
   query ($page: Int) {
-    records: allArticle(sortBy:"createdAt", order:DESC, perPage: 9, page: $page) @paginate {
+    records: allOferta(sortBy:"createdAt", order:DESC, perPage: 9, page: $page) @paginate {
       totalCount
       pageInfo {
         totalPages

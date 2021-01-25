@@ -17,7 +17,7 @@ Kontakt
             <div class="w-full p-4 font-bold leading-loose font-serif prose-xl">
             <p class="">PAULINA KULIGOWSKA</p>
             <p>+48 799 859 509</p>
-            <p class="uppercase">Lazywinkphoto@gmail.com</p>
+            <p class="uppercase prose md:prose-xl">Lazywinkphoto@gmail.com</p>
             </div>
    
             <div class="w-full p-4 font-bold prose-xl">

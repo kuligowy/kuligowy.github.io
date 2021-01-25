@@ -13,23 +13,23 @@ module.exports = function (api) {
     addSchemaResolvers
   }) => {
     addSchemaResolvers({
-      Article: {
-        excerpt (obj) {
-          var longText = (obj.excerpt.length > 200) ? '...' : '';
-          return obj.excerpt.replace(/^(.{200}[^\s]*).*/, '$1' + longText);
-        }
-      },
-      News: {
+      Oferta: {
         excerpt (obj) {
           var longText = (obj.excerpt.length > 200) ? '...' : '';
           return obj.excerpt.replace(/^(.{200}[^\s]*).*/, '$1' + longText);
         }
       }
+      //, News: {
+      //   excerpt (obj) {
+      //     var longText = (obj.excerpt.length > 200) ? '...' : '';
+      //     return obj.excerpt.replace(/^(.{200}[^\s]*).*/, '$1' + longText);
+      //   }
+      // }
     });
   });
 
   api.onCreateNode(options => {
-    if (options.internal.typeName === 'Article') {
+    if (options.internal.typeName === 'Oferta') {
       options.recordType = options.internal.typeName;
       options.tags = (typeof options.tags === 'string') ? options.tags.split(',').map(string => string.trim()) : options.tags;
       return {
@@ -45,20 +45,20 @@ module.exports = function (api) {
       };
     }
 
-    if (options.internal.typeName === 'News') {
-      options.recordType = options.internal.typeName;
-      options.tags = (typeof options.tags === 'string') ? options.tags.split(',').map(string => string.trim()) : options.tags;
-      return {
-        ...options
-      };
-    }
+    // if (options.internal.typeName === 'News') {
+    //   options.recordType = options.internal.typeName;
+    //   options.tags = (typeof options.tags === 'string') ? options.tags.split(',').map(string => string.trim()) : options.tags;
+    //   return {
+    //     ...options
+    //   };
+    // }
 
-    if (options.internal.typeName === 'Tag') {
-      options.recordType = options.internal.typeName;
-      return {
-        ...options
-      };
-    }
+    // if (options.internal.typeName === 'Tag') {
+    //   options.recordType = options.internal.typeName;
+    //   return {
+    //     ...options
+    //   };
+    // }
 
     if (options.internal.typeName === 'Resource') {
       options.recordType = options.internal.typeName;

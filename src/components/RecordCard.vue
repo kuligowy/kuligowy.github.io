@@ -64,7 +64,7 @@ export default {
   props: {
     cardSize: {
       type: String,
-      default: 'sm:w-1/2 lg:w-1/3'
+      default: 'sm:w-1/2 lg:w-1/2'
     },
     record: {
       type: Object,

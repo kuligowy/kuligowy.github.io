@@ -19,7 +19,7 @@
 
 <static-query>
   query {
-    records: allArticle(limit:6, sortBy:"createdAt") {
+    records: allOferta(limit:6, sortBy:"createdAt") {
       edges {
         node {
           title

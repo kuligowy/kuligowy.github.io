@@ -29,13 +29,19 @@
         Tags
       </h3>
       <div class="tags-items break-words">
-        <g-link
+        <!-- <g-link
           v-for="tag in record.tags"
           :key="tag.id"
           class="mr-2 my-4 hover:bg-gray-200 p-1 rounded"
           :to="tag.path">
-          #{{ tag.title }}
-        </g-link>
+          #{{ tag.title }} -->
+        <!-- </g-link> -->
+          <span v-for="tag in record.tags" 
+            :key="tag.id"
+            :to="tag.path"
+            class="mr-2 my-4 hover:bg-gray-200 p-1 rounded">
+            #{{ tag.title }}
+            </span>
       </div>
     </div>
 
@@ -68,13 +74,19 @@
           Tags
         </template>
         <template v-slot:options>
-          <g-link
+          <!-- <g-link
             v-for="tag in record.tags"
             :key="tag.id"
             :to="tag.path"
             class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900">
             {{ tag.title }}
-          </g-link>
+          </g-link> -->
+          <span v-for="tag in record.tags" 
+            :key="tag.id"
+            :to="tag.path"
+            class="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900">
+            {{ tag.title }}
+            </span>
         </template>
       </FilterDropdown>
     </div>
@@ -103,7 +115,8 @@ export default {
     subtitles () {
       // source: https://github.com/gridsome/gridsome.org/blob/master/src/templates/DocPage.vue
       // Remove h1, h4, h5, h6 titles
-      const subtitles = this.record.headings.filter((value, index, arr) => {
+      console.log(this.record.tags)
+      const subtitles = (this.record.headings||[]).filter((value, index, arr) => {
         return [2, 3].includes(value.depth);
       });
       return subtitles;

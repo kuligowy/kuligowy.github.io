@@ -3,12 +3,12 @@
     <div class="container px-5 py-12 mx-auto">
       <div class="text-center pb-12">
         <h2 class="text-4xl">
-          Latest News
+          Aktualności
         </h2>
       </div>
       <div class="flex flex-wrap -m-4">
-        <RecordCard
-          v-for="edge in $static.records.edges"
+        <NewsCard
+          v-for="edge in $static.news.edges"
           :key="edge.node.id"
           :record="edge.node" />
       </div>
@@ -17,15 +17,28 @@
 </template>
 
 <static-query>
-  query {
-    records: allNews(limit:6, sortBy:"createdAt") {
+  query News {
+    news: allContentfulNews {
       edges {
         node {
-          title
+          title,
+          excerpt,
+          createdAt,
+          heroImage {
+                file {
+                  url,
+                  details {
+                    size
+                  }
+                }
+              }
+          slug,
           path
-          excerpt
-          createdAt(format:"Do MMMM YYYY")
-          timeToRead
+          tags{
+            title
+            id
+            path
+          }
         }
       }
     }
@@ -33,11 +46,11 @@
 </static-query>
 
 <script>
-import RecordCard from '~/components/RecordCard'
+import NewsCard from '~/components/NewsCard'
 
 export default {
   components: {
-    RecordCard
+    NewsCard
   }
 };
 </script>

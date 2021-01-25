@@ -85,8 +85,8 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        typeName: 'Article',
-        baseDir: './content/articles',
+        typeName: 'Oferta',
+        baseDir: './content/oferta',
         path: '**/*.md',
         refs: {
           tags: {
@@ -96,20 +96,20 @@ module.exports = {
         }
       }
     },
-    {
-      use: '@gridsome/source-filesystem',
-      options: {
-        typeName: 'News',
-        baseDir: './content/news',
-        path: '*.md',
-        refs: {
-          tags: {
-            typeName: 'Tag',
-            create: true
-          }
-        }
-      }
-    },
+    // {
+    //   use: '@gridsome/source-filesystem',
+    //   options: {
+    //     typeName: 'News',
+    //     baseDir: './content/news',
+    //     path: '*.md',
+    //     refs: {
+    //       tags: {
+    //         typeName: 'Tag',
+    //         create: true
+    //       }
+    //     }
+    //   }
+    // },
     {
       use: '@gridsome/source-filesystem',
       options: {
@@ -138,22 +138,33 @@ module.exports = {
     }
   ],
   templates: {
-    ContentfulGallery: "/gallery/:slug",
-    Article: [{
-      path: '/articles/:title'
+    ContentfulGallery: "/galeria/:slug",
+    ContentfulNews: [{
+      path: "/aktualnosci/:title",
     }],
-    Tag: [
-      {
-        path: '/tag/:title',
-        component: './src/templates/Tag.vue'
-      }
-    ],
-    News: [
-      {
-        path: '/news/:title',
-        component: './src/templates/News.vue'
-      }
-    ],
+    ContentfulTag: [{
+      path: "/tag/:title",
+      component: './src/templates/Tag.vue'
+    }],
+    ContentfulOffer: [{
+      path: "/oferta/:title",
+      component: './src/templates/Tag.vue'
+    }],
+    // Oferta: [{
+    //   path: '/oferta/:title'
+    // }],
+    // Tag: [
+    //   {
+    //     path: '/tag/:title',
+    //     component: './src/templates/Tag.vue'
+    //   }
+    // ],
+    // News: [
+    //   {
+    //     path: '/news/:title',
+    //     component: './src/templates/News.vue'
+    //   }
+    // ],
     CustomPage: [
       {
         path: '/pages/:title',

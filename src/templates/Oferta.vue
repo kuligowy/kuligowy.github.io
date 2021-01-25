@@ -26,16 +26,12 @@
 
 <page-query>
   query ($id: ID!) {
-    entry : article(id: $id) {
+    entry : oferta(id: $id) {
       title
       content,
       excerpt,
       createdAt(format:"Do MMMM YYYY"),
       timeToRead,
-      tags {
-          title,
-          path
-      },
       headings {
         depth,
         value,

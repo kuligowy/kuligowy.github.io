@@ -21,30 +21,30 @@
           exact>
           Home
         </g-link>
-        <g-link
-          to="/news"
+                <g-link
+          to="/galeria/portfolio"
           class="mr-5 hidden md:block"
           exact>
-          Nowości
+          Portfolio
         </g-link>
         <g-link
-          to="/articles"
+          to="/aktualnosci"
+          class="mr-5 hidden md:block"
+          exact>
+          Aktualności
+        </g-link>
+        <g-link
+          to="/oferta"
           class="mr-5 hidden md:block"
           exact>
           Oferta
         </g-link>
         <g-link
-          to="/contact-page"
+          to="/kontakt"
           class="mr-5 hidden md:block"
           exact>
           Kontakt
         </g-link>
-        <!-- <g-link
-          to="/resources"
-          class="mr-5 hidden md:block"
-          exact>
-          Resources
-        </g-link> -->
         
         <g-link
           to="/o-mnie"

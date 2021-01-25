@@ -17,7 +17,7 @@
             v-for="{ node } in $page.galleries.edges"
             :key="node.id"
           >
-            <g-link :to="`/gallery/${node.slug}`">
+            <g-link :to="`/galeria/${node.slug}`">
               <ImageHover width="100%" height="100%">
                 <g-image
                   class="cover-image"

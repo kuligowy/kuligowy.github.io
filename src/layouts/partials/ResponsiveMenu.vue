@@ -29,31 +29,38 @@
           </g-link>
         </li><li>
           <g-link
-            to="/articles"
+            to="/galeria/portfolio"
             class="inline-block mb-5"
             exact>
-            Articles
+            Portfolio
           </g-link>
         </li><li>
           <g-link
-            to="/resources"
+            to="/aktualnosci"
             class="inline-block mb-5"
             exact>
-            Resources
+            Aktualności
           </g-link>
         </li><li>
           <g-link
-            to="/news"
+            to="/oferta"
             class="inline-block mb-5"
             exact>
-            News
+            Oferta
           </g-link>
         </li><li>
           <g-link
-            to="/pages/contribute"
+            to="/kontakt"
             class="inline-block mb-5"
             exact>
-            Contribute
+            Kontakt
+          </g-link>
+        </li><li>
+          <g-link
+            to="/o-mnie"
+            class="inline-block mb-5"
+            exact>
+            O mnie
           </g-link>
         </li>
       </ul>

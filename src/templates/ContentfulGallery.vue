@@ -11,10 +11,10 @@
     </PageHeader>
 
     <div class="container mx-auto">
-      <div class="flex flex-wrap lg:flex-row-reverse py-12">
+      <div class="flex flex-wrap justify-content py-12">
         <!-- <div class="gallery"> -->
           <g-image
-            class="m-2"
+            class="m-1 cursor-pointer"
             :key="index"
             v-for="(image, index) in $page.gallery.photos"
             :src="renderThumbnail(image.file.url)"
@@ -30,9 +30,9 @@
             @close="hideModal"
           />
         </transition>
-        <g-link class="return-link" to="/galleries/"
+        <!-- <g-link class="return-link" to="/galleries/"
           >👈 Back to gallery overview</g-link
-        >
+        > -->
       </div>
     </div>
   </Layout>
