@@ -2,23 +2,23 @@
   <Layout>
     <PageHeader>
       <template v-slot:image>
-        <g-image src="~/assets/images/janko-ferlic-specialdaddy-sfL_QOnmy00-unsplash.jpg" />
+        <!-- <g-image src="~/assets/images/janko-ferlic-specialdaddy-sfL_QOnmy00-unsplash.jpg" /> -->
       </template>
       <template v-slot:content>
         <p class="text-4xl md:text-6xl">
-          Articles
+         <span class="uppercase">Oferta</span>
         </p>
-        <p
+        <!-- <p
           class="text-lg md:text-2xl">
           We have currently {{ $page.records.totalCount }} articles in our list
-        </p>
+        </p> -->
       </template>
     </PageHeader>
 
     <div class="container px-5 py-12 mx-auto">
       <section>
         <div class="flex flex-wrap -m-4">
-          <RecordCard
+          <OfferCard
             v-for="edge in $page.records.edges"
             :key="edge.node.id"
             :record="edge.node" />
@@ -38,7 +38,7 @@
 
 <page-query>
   query ($page: Int) {
-    records: allOferta(sortBy:"createdAt", order:DESC, perPage: 9, page: $page) @paginate {
+    records: allContentfulOffer(sortBy:"createdAt", order:DESC, perPage: 9, page: $page) @paginate {
       totalCount
       pageInfo {
         totalPages
@@ -49,8 +49,9 @@
           title
           path
           excerpt
+          richExcerpt
+          icon
           createdAt(format:"Do MMMM YYYY")
-          timeToRead
         }
       }
     }
@@ -59,17 +60,17 @@
 
 <script>
 import PageHeader from '~/components/PageHeader'
-import RecordCard from '~/components/RecordCard'
+import OfferCard from '~/components/OfferCard'
 import Pagination from '~/components/Pagination'
 
 export default {
   metaInfo: {
-    title: 'Browse Articles'
+    title: 'Oferta'
   },
   components: {
     PageHeader,
     Pagination,
-    RecordCard
+    OfferCard
   }
 };
 </script>

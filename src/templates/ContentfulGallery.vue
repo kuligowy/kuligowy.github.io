@@ -5,7 +5,7 @@
         <!-- <g-image src="~/assets/images/glowne2-scaled.webp"/> -->
       </template>
       <template v-slot:content>
-        <p class="text-4xl md:text-6xl">{{ $page.gallery.title }}</p>
+        <p class="text-4xl md:text-6xl uppercase">{{ $page.gallery.title }}</p>
         <p class="text-lg md:text-2xl">{{ $page.gallery.simpleDescription }}</p>
       </template>
     </PageHeader>
@@ -118,7 +118,7 @@ query Gallery ($path: String!) {
   gallery: contentfulGallery (path: $path) {
     title,
     description,
-    simpleDescription,
+    simpleDescription
     heroImage {
       file {
         url,

@@ -48,14 +48,17 @@
     }
     
     .bg-pattern {
-        background-image: url('../images/pattern.svg');
-        @apply opacity-10;
+        background-image: url('../images/bg_pattern.jpg');
+        @apply opacity-90;
         @apply absolute;
         @apply top-0;
         @apply left-0;
         @apply w-full;
         @apply h-full;
         @apply -z-10;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
 

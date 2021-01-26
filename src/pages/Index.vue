@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <PageHeader>
+    <PageHeader border="false">
       <template v-slot:image>
         <!-- <g-image src="~/assets/images/glowne2-scaled.webp"/> -->
       </template>
@@ -11,14 +11,18 @@
     </PageHeader>
 
     <SectionPortfolio />
-    <div class="container mx-auto">
+
+    <!-- <div class="container mx-auto"> -->
       <SectionLatestNews />
       <SectionOffer />
-    </div>
+    <!-- </div> -->
+
     <SectionInterested />
+
     <div class="container mx-auto">
       <SectionContact />
     </div>
+
   </Layout>
 </template>
 

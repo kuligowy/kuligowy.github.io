@@ -1,17 +1,20 @@
 <template>
   <section>
-    <div class="container px-5 py-12 mx-auto">
+    <div class="container px-5 pt-12 mx-auto">
+      
       <div class="text-center pb-12">
         <h2 class="text-4xl">
           Aktualności
         </h2>
       </div>
+
       <div class="flex flex-wrap -m-4">
         <NewsCard
           v-for="edge in $static.news.edges"
           :key="edge.node.id"
           :record="edge.node" />
       </div>
+
     </div>
   </section>
 </template>
@@ -23,6 +26,7 @@
         node {
           title,
           excerpt,
+          richExcerpt,
           createdAt,
           heroImage {
                 file {

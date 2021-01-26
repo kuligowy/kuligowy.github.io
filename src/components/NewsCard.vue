@@ -6,7 +6,7 @@
         <div class="p-6">
           <h1
             class="prose-2xl font-bold text-gray-900 mb-3 uppercase text-center"
-            :class="{ 'mb-12': !record.excerpt }">
+            :class="{ 'mb-12': !record.richExcerpt }">
             {{ record.title }}
           </h1>
           <div class="flex justify-center">
@@ -16,9 +16,9 @@
               :alt="getCoverImage(record).title"/>
           </div>
           <div
-            v-if="record.excerpt"
+            v-if="record.richExcerpt"
             class="prose-xl text-gray-800 text-left"
-            v-html="record.excerpt"/>
+            v-html="renderHtmlMethod(record.richExcerpt)"/>
             <div class="flex flex-row-reverse"><span class="italic prose-large">Opublikowano: {{published}}</span></div>
         </div>
       </div>
@@ -27,9 +27,12 @@
 </template>
 
 <script>
-import { getCoverImage, renderImage } from "~/helpers/contentful";
+import { getCoverImage,renderHtmlMethod, renderImage } from "~/helpers/contentful";
 export default {
   methods: {
+    renderHtmlMethod(input) {
+      return renderHtmlMethod(input);
+    },
     getCoverImage(node) {
       return getCoverImage(node);
     },

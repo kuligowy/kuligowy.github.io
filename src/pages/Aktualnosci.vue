@@ -2,11 +2,10 @@
   <Layout>
     <PageHeader>
       <template v-slot:image>
-        <g-image src="~/assets/images/janko-ferlic-specialdaddy-sfL_QOnmy00-unsplash.jpg" />
       </template>
       <template v-slot:content>
         <p class="text-4xl md:text-6xl">
-          Aktualności
+          <span class="uppercase">Aktualności</span>
         </p>
         <p
           class="text-lg md:text-2xl">
@@ -49,6 +48,7 @@
           title
           excerpt
           createdAt
+          richExcerpt
           heroImage {
                 file {
                   url,
