@@ -21,7 +21,7 @@
 
 <static-query>
   query News {
-    news: allContentfulNews {
+    news: allContentfulNews(limit:4, sortBy:"createdAt") {
       edges {
         node {
           title,
