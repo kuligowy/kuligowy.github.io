@@ -2,10 +2,10 @@
   <div class="p-4 w-full" :class="cardSize">
     <g-link :to="record.path" class="inline-flex items-center">
       <div
-        class="h-full border-2 border-gray-200 rounded-lg overflow-hidden relative hover:bg-shark-50 hover:bg-opacity-60">
+        class="h-full border-2 shadow-lg border-gray-200  overflow-hidden relative hover:bg-shark-50 hover:bg-opacity-60">
         <div class="p-6">
           <h1
-            class="prose-2xl font-bold text-gray-900 mb-3 uppercase text-center"
+            class="text-2xl font-bold text-gray-900 mb-3 uppercase text-center"
             :class="{ 'mb-12': !record.richExcerpt }">
             {{ record.title }}
           </h1>
@@ -17,9 +17,11 @@
           </div>
           <div
             v-if="record.richExcerpt"
-            class="prose-xl text-gray-800 text-left"
+            class="text-justify text-lg text-gray-800"
             v-html="renderHtmlMethod(record.richExcerpt)"/>
-            <div class="flex flex-row-reverse"><span class="italic prose-large">Opublikowano: {{published}}</span></div>
+            <div class="flex flex-row-reverse">
+              <span class="italic text-lg pt-4">Opublikowano: {{published}}</span>
+            </div>
         </div>
       </div>
     </g-link>

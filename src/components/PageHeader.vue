@@ -6,7 +6,7 @@
       'bg-gray-200 border-b border-gray-400' : !hasImage
     }">
     <slot name="image">
-      <div class="bg-pattern" />
+      <!-- <div class="bg-pattern" /> -->
     </slot>
     <div class="flex z-10 w-1/2"> 
       <div class="container text-center mx-auto text-shark-100"
@@ -24,7 +24,7 @@ export default {
   props: {
     border:{
       type: String,
-      default: 'true'
+      default: 'false'
     }
   },
   data () {

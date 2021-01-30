@@ -3,7 +3,7 @@
     <div class="container px-5 py-12 mx-auto">
 
       <div class="text-center pb-12 ">
-        <h2 class="text-4xl">
+        <h2 class="text-4xl uppercase">
          Oferta
         </h2>
       </div>

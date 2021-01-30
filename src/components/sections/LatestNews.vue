@@ -3,7 +3,7 @@
     <div class="container px-5 pt-12 mx-auto">
       
       <div class="text-center pb-12">
-        <h2 class="text-4xl">
+        <h2 class="text-4xl uppercase">
           Aktualności
         </h2>
       </div>

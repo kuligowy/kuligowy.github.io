@@ -2,7 +2,8 @@
   <Layout>
     <PageHeader border="false">
       <template v-slot:image>
-        <!-- <g-image src="~/assets/images/glowne2-scaled.webp"/> -->
+        <g-image class="invisible md:visible" src="~/assets/images/main_pic.webp" />
+        <g-image class="visible md:invisible" src="~/assets/images/glowne.webp" />
       </template>
       <template v-slot:content>
         <p class="text-4xl md:text-6xl">Lazy Wink</p>
@@ -36,7 +37,7 @@ import SectionInterested from "~/components/sections/Interested";
 import SectionContact from "~/components/sections/Contact";
 export default {
   metaInfo: {
-    title: "Learn something new",
+    title: "Strona główna",
   },
   components: {
     PageHeader,
